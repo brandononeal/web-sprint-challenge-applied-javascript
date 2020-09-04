@@ -18,7 +18,7 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
         })
     })
     .catch(err => {
-        console.log(err)
+        alert(err)
     })
 
 function Tab(data) {
