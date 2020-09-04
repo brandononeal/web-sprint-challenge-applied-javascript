@@ -47,7 +47,8 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         })
     })
     .catch(err => {
-        alert(err)
+        const errorsContainer = document.querySelector('.errors-container')
+        errorsContainer.append(err)
     })
 
 function Article(data) {

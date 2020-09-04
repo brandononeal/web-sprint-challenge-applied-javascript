@@ -18,7 +18,8 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
         })
     })
     .catch(err => {
-        alert(err)
+        const errorsContainer = document.querySelector('.errors-container')
+        errorsContainer.append(err)
     })
 
 function Tab(data) {
@@ -27,3 +28,8 @@ function Tab(data) {
     tab.textContent = data
     return tab
 }
+
+// articleExpand.addEventListener('click', event => {
+//     article.classList.toggle('article-open')
+// })
+
